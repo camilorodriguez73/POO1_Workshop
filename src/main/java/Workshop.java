@@ -20,7 +20,7 @@ public class Workshop {
 };
     }
 
-    // Método que retorna la tabla de multiplicar de un número
+    // git commit -m "Implementar tablaMultiplicar"
     public int[] tablaMultiplicar(int numero, int limite) {
         int[] resultado = new int[limite];
         for(int i = 0; i < limite; i++){
@@ -31,10 +31,15 @@ public class Workshop {
 
     // Método que calcula el factorial de un número entero
     public int factorial(int n) {
-        // TODO: Implementar el método para calcular el factorial de un número entero.
-        // Ejemplo: Si n = 5, el resultado debería ser 120.
-        // Lanzar IllegalArgumentException si n es negativo.
-        return 0;
+        if (n < 0){
+            throw new IllegalArgumentException("El número no debe ser negativo");
+        }
+        int resultado = 1;
+
+        for (int i = 2; i <= n; i++ ){
+            resultado *= i;
+        }
+        return resultado;
     }
 
     // Método que verifica si un número es primo
