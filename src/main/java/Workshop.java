@@ -25,14 +25,14 @@ public class Workshop {
         int[] resultado = new int[limite];
         for(int i = 0; i < limite; i++){
             resultado[i] = numero * (i + 1);
-        }
+        }   
         return resultado;
     }
 
     // Método que calcula el factorial de un número entero
     public int factorial(int n) {
         if (n < 0){
-            throw new IllegalArgumentException("El número no debe ser negativo");
+                throw new IllegalArgumentException("El número no debe ser negativo");
         }
         int resultado = 1;
 
