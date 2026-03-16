@@ -78,6 +78,10 @@ public int sumarDosNumeros(int a, int b) {
         return resultado;
     }
 
+
+
+
+
 	// Método que suma todos los elementos de un arreglo 
 public int sumaElementos(int[] arreglo) {
     int suma = 0;
