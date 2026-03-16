@@ -104,6 +104,7 @@ public int sumarDosNumeros(int a, int b) {
         return suma / arreglo.length;
     }
 
+
     // Método que calcula el promedio de los elementos de un arreglo
     public double promedioElementos(int[] arreglo) {
         // TODO: Implementar el método para calcular el promedio de los elementos de un arreglo.
