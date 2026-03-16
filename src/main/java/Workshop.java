@@ -78,11 +78,30 @@ public int sumarDosNumeros(int a, int b) {
         return resultado;
     }
 
-    // Método que suma todos los elementos de un arreglo
+        // Método que suma todos los elementos de un arreglo
     public int sumaElementos(int[] arreglo) {
-        // TODO: Implementar el método para sumar todos los elementos de un arreglo.
-        // Ejemplo: Si arreglo = [1, 2, 3, 4, 5], el resultado debería ser 15.
-        return 0;
+        int suma = 0;
+
+        for (int i = 0; i < arreglo.length; i++){
+            suma += arreglo[i];
+        }
+
+        return suma;
+    }
+
+    // Método que calcula el promedio de los elementos de un arreglo
+    public double promedioElementos(int[] arreglo) {
+
+        if(arreglo.length == 0){
+            return 0.0;
+        }
+
+        double suma = 0;
+        for (int i=0; i < arreglo.length; i++) {
+            suma += arreglo[i];
+        }
+
+        return suma / arreglo.length;
     }
 
     // Método que calcula el promedio de los elementos de un arreglo
