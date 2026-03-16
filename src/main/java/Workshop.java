@@ -311,12 +311,19 @@ public class Workshop {
     // Método que cuenta el número de palabras en una cadena
     public int contarPalabras(String cadena) {
 
-    if (cadena.trim().isEmpty()) {
+    if (cadena.equals("")) {
         return 0;
     }
 
-    String[] palabras = cadena.trim().split("\\s+");
-    return palabras.length;
+    int contador = 1;
+
+    for (int i = 0; i < cadena.length(); i++) {
+        if (cadena.charAt(i) == ' ') {
+            contador++;
+        }
+    }
+
+    return contador;
 }
 
     // Método que convierte una cadena a mayúsculas
