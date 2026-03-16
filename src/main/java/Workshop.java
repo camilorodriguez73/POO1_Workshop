@@ -2,86 +2,100 @@ import java.util.List;
 
 public class Workshop {
     public static void main(String[] args) {
+
     }
 
-    // Método que suma dos números enteros
-    public int sumarDosNumeros(int a, int b) {
+  // Método que suma dos números enteros
+public int sumarDosNumeros(int a, int b) {
         return a + b;
-    }
+}
 
     public int mayorDeTresNumeros(int a, int b, int c) {
-        if (a >= b && a >= c) return a;
-        if (b >= c) return b;
-        return c;
-    }
+    if (a >= b && a >= c) return a;
+    if (b >= c) return b;
+    return c;
+}
 
-    public int[] tablaMultiplicar(int numero, int limite) {
+      public int[] tablaMultiplicar(int numero, int limite) {
         int[] resultado = new int[limite];
-        for (int i = 0; i < limite; i++) {
+        for(int i = 0; i < limite; i++){
             resultado[i] = numero * (i + 1);
-        }
+        }   
         return resultado;
     }
 
+    // Método que calcula el factorial de un número entero
     public int factorial(int n) {
-        if (n < 0) {
-            throw new IllegalArgumentException("El número no debe ser negativo");
+        if (n < 0){
+                throw new IllegalArgumentException("El número no debe ser negativo");
         }
         int resultado = 1;
-        for (int i = 2; i <= n; i++) {
+
+        for (int i = 2; i <= n; i++ ){
             resultado *= i;
         }
         return resultado;
     }
 
+    
+       // Método que verifica si un número es primo
     public boolean esPrimo(int numero) {
-        if (numero <= 1) return false;
-        // CORRECCIÓN: i < numero (sin el =) para que no se divida por sí mismo
-        for (int i = 2; i < numero; i++) {
-            if (numero % i == 0) return false;
+        if (numero <= 1) {
+            return false;
+        }
+
+        for (int i = 2; i <= numero; i++) {
+            if(numero % i == 0){
+                return false;
+            }
         }
         return true;
     }
 
+	// Método que genera una serie de Fibonacci
     public int[] serieFibonacci(int n) {
-        if (n < 0) throw new IllegalArgumentException("El número no puede ser negativo");
-        if (n == 0) return new int[0];
-        int[] resultado = new int[n];
-        for (int i = 0; i < n; i++) {
-            if (i == 0) resultado[i] = 0;
-            else if (i == 1) resultado[i] = 1;
-            else resultado[i] = resultado[i - 1] + resultado[i - 2];
+
+        if (n < 0){
+            throw new IllegalArgumentException("El número de elementos no puede ser negativo");
         }
+
+        if (n == 0){
+            return new int[0];
+        }
+
+        int[] resultado = new int [n];
+
+        for (int i = 0; i < n; i++){
+            if (i == 0){
+                resultado[i] = 0;
+            } else if (i == 1){
+                resultado[i] = 1;
+            } else {
+                resultado[i] = resultado[i - 1] + resultado[i - 2];
+            }
+        }
+        
         return resultado;
     }
 
-    public int sumaElementos(int[] arreglo) {
-        int suma = 0;
-        for (int i = 0; i < arreglo.length; i++) {
-            suma += arreglo[i];
-        }
-        return suma;
+	// Método que suma todos los elementos de un arreglo 
+public int sumaElementos(int[] arreglo) {
+    int suma = 0;
+
+    
+    for (int numero : arreglo) {
+        suma += numero;
     }
 
-    public double promedioElementos(int[] arreglo) {
-        if (arreglo.length == 0) return 0.0;
-        double suma = 0;
-        for (int i = 0; i < arreglo.length; i++) {
-            suma += (double) arreglo[i];
-        }
-        return suma / (double) arreglo.length;
-    }
+    return suma;
+}
 
-    public int encontrarElementoMayor(int[] arreglo) {
-        int mayor = arreglo[0];
-        for (int i = 1; i < arreglo.length; i++) {
-            if (arreglo[i] > mayor) {
-                mayor = arreglo[i];
-            }
-        }
-        return mayor;
-    }
-} 
+
+
+
+
+
+
     // Método que encuentra el elemento menor en un arreglo
     public int encontrarElementoMenor(int[] arreglo) {
         // TODO: Implementar el método para encontrar el elemento menor en un arreglo.
