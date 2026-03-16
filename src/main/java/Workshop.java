@@ -5,12 +5,10 @@ public class Workshop {
 
     }
 
-    // Método que suma dos números enteros
-    public int sumarDosNumeros(int a, int b) {
-        // TODO: Implementar el método para retornar la suma de dos números enteros.
-        // Ejemplo: Si a = 3 y b = 5, el resultado debería ser 8.
-        return a+b;
-    }
+  // Método que suma dos números enteros
+public int sumarDosNumeros(int a, int b) {
+        return a + b;
+}
 
     public int mayorDeTresNumeros(int a, int b, int c) {
     if (a >= b && a >= c) return a;
