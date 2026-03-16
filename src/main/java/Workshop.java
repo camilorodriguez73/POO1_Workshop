@@ -101,22 +101,6 @@ public double promedioElementos(int[] arreglo) {
         return suma / (double) arreglo.length; 
 }
 
-    // Método que calcula el promedio de los elementos de un arreglo
-    public double promedioElementos(int[] arreglo) {
-        // TODO: Implementar el método para calcular el promedio de los elementos de un arreglo.
-        // Ejemplo: Si arreglo = [1, 2, 3, 4, 5], el resultado debería ser 3.0.
-        return 0.0;
-    }
-
-    public int encontrarElementoMayor(int[] arreglo) {
-        int mayor = arreglo[0];
-        for (int i = 1; i < arreglo.length; i++) {
-            if (arreglo[i] > mayor) {
-                mayor = arreglo[i];
-            }
-        }
-        return mayor;
-    }
 
     // Método que encuentra el elemento menor en un arreglo
     public int encontrarElementoMenor(int[] arreglo) {
