@@ -52,6 +52,32 @@ public int sumarDosNumeros(int a, int b) {
         return true;
     }
 
+	// Método que genera una serie de Fibonacci
+    public int[] serieFibonacci(int n) {
+
+        if (n < 0){
+            throw new IllegalArgumentException("El número de elementos no puede ser negativo");
+        }
+
+        if (n == 0){
+            return new int[0];
+        }
+
+        int[] resultado = new int [n];
+
+        for (int i = 0; i < n; i++){
+            if (i == 0){
+                resultado[i] = 0;
+            } else if (i == 1){
+                resultado[i] = 1;
+            } else {
+                resultado[i] = resultado[i - 1] + resultado[i - 2];
+            }
+        }
+        
+        return resultado;
+    }
+
     // Método que suma todos los elementos de un arreglo
     public int sumaElementos(int[] arreglo) {
         // TODO: Implementar el método para sumar todos los elementos de un arreglo.
