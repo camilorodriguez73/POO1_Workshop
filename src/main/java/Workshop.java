@@ -37,20 +37,12 @@ public int sumarDosNumeros(int a, int b) {
         return resultado;
     }
 
-    // Método que verifica si un número es primo
+    
+     // Método que verifica si un número es primo
     public boolean esPrimo(int numero) {
-        // TODO: Implementar el método para verificar si un número es primo.
-        // Ejemplo: Si numero = 7, el resultado debería ser true.
-        return false;
-    }
-
-    // Método que genera una serie de Fibonacci
-    public int[] serieFibonacci(int n) {
-        // TODO: Implementar el método para generar la serie de Fibonacci hasta el número n.
-        // Ejemplo: Si n = 5, el resultado debería ser [0, 1, 1, 2, 3].
-        // Lanzar IllegalArgumentException si n es negativo.
-        return new int[0];
-    }
+        if (numero <= 1) {
+            return false;
+        }
 
     // Método que suma todos los elementos de un arreglo
     public int sumaElementos(int[] arreglo) {
