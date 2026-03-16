@@ -7,10 +7,4 @@ public class Workshop {
     public int sumarDosNumeros(int a, int b) {
         return a + b;
     }
-
-    public int mayorDeTresNumeros(int a, int b, int c) {
-        if (a >= b && a >= c) return a;
-        if (b >= c) return b;
-        return c;
-    }
 }
