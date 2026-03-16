@@ -38,11 +38,19 @@ public int sumarDosNumeros(int a, int b) {
     }
 
     
-     // Método que verifica si un número es primo
+       // Método que verifica si un número es primo
     public boolean esPrimo(int numero) {
         if (numero <= 1) {
             return false;
         }
+
+        for (int i = 2; i <= numero; i++) {
+            if(numero % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
 
     // Método que suma todos los elementos de un arreglo
     public int sumaElementos(int[] arreglo) {
